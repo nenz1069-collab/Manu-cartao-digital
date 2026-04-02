@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background: rgb(0, 0, 0);
+  background: rgb(95, 95, 95);
   padding: 20px;
   width: 90%;
   max-width: 400px;
@@ -33,7 +33,7 @@ h1 {
 }
 
 .profissao {
-  color: gray;
+  color: rgb(255, 255, 255);
   margin-bottom: 10px;
 }
 

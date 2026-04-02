@@ -1,45 +1,110 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #000000;
+  background-color: #525252;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
-  background: rgb(49, 49, 49);
+  background: rgb(78, 78, 78);
   padding: 20px;
-  width: 300px;
+  width: 90%;
+  max-width: 400px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* FOTO */
 .foto {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+}
+
+/* TEXTO */
+h1 {
+  font-size: 22px;
+  margin: 10px 0 5px;
 }
 
 .profissao {
   color: gray;
+  margin-bottom: 10px;
 }
 
+/* LINHA */
 .linha {
   height: 1px;
   background-color: #ccc;
   margin: 15px 0;
 }
 
+/* CONTATO */
 .contato {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
   margin: 5px 0;
 }
 
 a {
   color: blue;
   text-decoration: none;
+  word-break: break-all;
+}
+
+/* SOBRE */
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* 📱 CELULAR */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .foto {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
+/* 💻 TELAS GRANDES */
+@media (min-width: 768px) {
+  .container {
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  .foto {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 15px;
+  }
 }

@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profissao {
+  color: gray;
+}
+
+.linha {
+  height: 1px;
+  background-color: #ccc;
+  margin: 15px 0;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
